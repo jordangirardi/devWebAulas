@@ -1,0 +1,85 @@
+﻿/*Sobrescritas do bootstrap e outros ajustes de responsividade,
+exibição fica melhor dessa forma:*/
+
+@media(min-width: 1280px) {
+    .divItemFilme .itemFilme .botoes a:hover, .modalLogin .botoesLogin a:hover {
+        background-color: #000;
+    }
+
+    .menu .areaLogin a:hover {
+        transform: scale(1.055);
+    }
+
+    #btnClose:hover {
+        background-color: #000;
+    }
+}
+
+@media(min-width: 768px) {
+    .conteudoPopup .areaConteudo .conteudoFilme {
+        overflow: auto;
+    }
+}
+
+@media(max-width: 992px) {
+    .divItemFilme {
+        max-width: 33%;
+        flex: 0 0 33%;
+    }
+}
+
+@media(max-width: 768px) {
+    .divItemFilme {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+        .divItemFilme .itemFilme img {
+            height: 250px;
+        }
+
+    .logoPopup {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .logoPopup img {
+            margin: auto;
+        }
+
+        .logoPopup h4 {
+            width: 100%;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+    #btnClose {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media(max-width: 580px) {
+    .divItemFilme .itemFilme {
+        width: 100%;
+    }
+
+        .divItemFilme .itemFilme .botoes {
+            flex-direction: column;
+        }
+
+            .divItemFilme .itemFilme .botoes a {
+                width: 80%;
+                font-size: 18px;
+                margin: 5px auto;
+            }
+
+        .divItemFilme .itemFilme img {
+            height: 200px;
+        }
+
+        .divItemFilme .itemFilme span {
+            font-size: 16px;
+        }
+}

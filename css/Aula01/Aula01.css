@@ -1,0 +1,86 @@
+﻿body {
+    font-family: 'Raleway Regular';
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 27px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    padding: 0 22px;
+}
+
+hr {
+    background-color: #000;
+    width: 60px;
+    margin: auto;
+    height: 1px;
+}
+
+.contentContainer {
+    background-image: url(../img/jpg/fundo2.jpg);
+    width: 100%;
+    margin: auto;
+    background-attachment: fixed;
+}
+
+    .contentContainer .conteudo {
+        background-color: #FFF;
+        width: 80%;
+        margin: auto;
+    }
+
+
+        .contentContainer .conteudo .itemPesquisa {
+            width: 100%;
+            padding: 50px 0;
+        }
+
+            .contentContainer .conteudo .itemPesquisa .contentImagens {
+                display: flex;
+                flex-wrap: wrap;
+                width: 60%;
+                margin: auto;
+            }
+
+                .contentContainer .conteudo .itemPesquisa .contentImagens .contentImagem {
+                    display: flex;
+                    width: 31%;
+                    margin: 10px auto;
+                }
+
+                    .contentContainer .conteudo .itemPesquisa .contentImagens .contentImagem img {
+                        display: block;
+                        margin: auto;
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+
+                    .contentContainer .conteudo .itemPesquisa .contentImagens .contentImagem:hover img {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+
+
+#areaClimaTempo {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    background-color: #FFF;
+    padding-top: 50px;
+}
+
+#iframeClimaTempo {
+    margin: auto;
+}

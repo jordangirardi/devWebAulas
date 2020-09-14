@@ -1,0 +1,19 @@
+﻿.areaNav {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+}
+
+#navAulas {
+    margin: auto;
+    display: block;
+}
+
+.itemNav {
+    float: none;
+    margin: auto;
+    padding: 5px 0;
+    font-size: 22px;
+    cursor: pointer;
+}

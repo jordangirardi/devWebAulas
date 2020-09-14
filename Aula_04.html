@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="img/Aula02/Games.ico" />
+
+    <!-- bootstrap css -->
+    <link href="css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/Aula04/Aula04.css" rel="stylesheet" />
+    <link href="css/Aula04/Responsive.css" rel="stylesheet" />
+
+    <title>N E T E F R I X</title>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="col-md-3 logoMenu">
+            <a href="#areaFilmes">
+                <img src="img/Aula03/logoNetflix/logoNetflix.png" />
+            </a>
+        </div>
+        <div class="col-md-3 areaLogin">
+            <a id="btnLogin">Entre ou Cadastre-se</a>
+        </div>
+
+    </div>
+
+    <div class="container" id="areaFilmes">
+    </div>
+
+    <div id="popup">
+        <div class=" col-md-10 conteudoPopup">
+            <div class="row logoPopup">
+                <img id="imgLogoPopup" src="img/Aula03/logoNetflix/logoNetflix.png" title="Voltar" />
+                <h4 id="titulo"></h4>
+                <a class="botao" id="btnClose">Fechar</a>
+            </div>
+            <div class="areaConteudo">
+                <div class=" col-md-3 imgCapa">
+                    <img id="imgCapaFilme" src="" />
+                </div>
+                <div class="col-md-9 conteudoFilme">
+                    <label>Lançamento:</label><label class="infoPopup" id="lancamento"></label><br />
+                    <label>Duração:</label><label class="infoPopup" id="duracao"></label><br />
+                    <label>Direção:</label><label class="infoPopup" id="direcao"></label><br />
+                    <label>Elenco:</label><label class="infoPopup" id="elenco"></label><br />
+                    <label>Genero:</label><label class="infoPopup" id="genero"></label><br />
+                    <label>Sinopse:</label><label class="infoPopup" id="sinopse"></label><br />
+                    <iframe id="iframeTrailer" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popupLogin">
+        <div class="modalLogin">
+            <div class="infoLogin">
+                <h4>Insira seus dados</h4>
+            </div>
+            <div class="inputDados">
+                <div class="form-row">
+                    <label for="inputNome" class="rotuloImput">Nome:</label>
+                    <input type="text" id="inputNome" maxlength="25" />
+                </div>
+                <div class="form-row">
+                    <label for="inputIdade" class="rotuloImput">Data Nasc:</label>
+                    <input type="date" id="inputDataNasc" maxlength="2" />
+                </div>
+                <div class="form-row">
+                    <label for="inputEmail" class="rotuloImput">Email:</label>
+                    <input type="email" id="inputEmail" maxlength="50" />
+                </div>
+                <div class="form-row">
+                    <label for="inputSenha" class="rotuloImput">Senha:</label>
+                    <input type="password" id="inputSenha" maxlength="25" />
+                </div>
+            </div>
+            <div class="botoesLogin">
+                <a id="btnSubmit">Enviar</a>
+                <a id="btnFecharLogin">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="js/Jquery/jquery.min.js"></script>
+<script src="js/Bootstrap/bootstrap.min.js"></script>
+
+<script src="js/Aula04/acervo.js"></script>
+<script src="js/Aula04/Main.js"></script>

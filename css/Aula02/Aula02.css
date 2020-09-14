@@ -1,0 +1,135 @@
+﻿body {
+    margin: 0;
+    font-family: "Raleway Regular";
+    background-color: #e8e8e8;
+}
+
+.menu {
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #b0b0b0;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navMenu {
+    width: auto;
+    margin: auto;
+    display: flex;
+}
+
+.itemMenu {
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    height: 75px;   
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+
+    .itemMenu a {
+        text-decoration: none;
+        color: #000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .itemMenu:hover {
+        background-color: #f2f2f2;
+    }
+
+.contentContainer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 75px;
+    background-color: #FFF;
+}
+
+    .contentContainer section {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px 10px;
+        width: 100%;
+    }
+
+        .contentContainer section .titulo {
+            width: 100%;
+            text-align: center;
+        }
+
+            .contentContainer section .titulo h1 {
+                text-transform: uppercase;
+                font-size: 22px;
+                font-family: "Raleway Regular";
+            }
+
+        .contentContainer section .conteudoCantor {
+            width: 100%;
+            display: flex;
+            height: 400px;
+        }
+
+            .contentContainer section .conteudoCantor .imgCantor {
+                width: 30%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+                .contentContainer section .conteudoCantor .imgCantor img {
+                    display: block;
+                    margin: auto;
+                    max-height: 100%;
+                    max-width: 100%;
+                    border: 1px solid #cdcdcd;
+                }
+
+                .contentContainer section .conteudoCantor .imgCantor span {
+                    width: 100%;
+                    text-align: center;
+                    font-size: 12px;
+                    font-style: italic;
+                }
+
+            .contentContainer section .conteudoCantor .textoCantor {
+                width: 70%;
+                display: flex;
+                padding: 10px 25px;
+                align-items: center;
+            }
+
+                .contentContainer section .conteudoCantor .textoCantor p {
+                    text-align: justify;
+                    line-height: 23px;
+                    font-size: 14px;
+                }
+
+footer {
+    width: 100%;
+    background-color: #232323;
+    display: flex;
+    margin: 0;
+    padding: 10px 0;
+}
+
+    footer span {
+        height: 15px;
+        color: #FFF;
+        text-align: center;
+        margin: auto;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }

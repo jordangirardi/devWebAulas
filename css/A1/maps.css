@@ -1,0 +1,26 @@
+.map-div {
+    overflow: hidden;
+    padding-bottom: 60%;
+    position: relative;
+    height: 100%;
+}
+
+    .map-div iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+@media(max-width: 992px) {
+    .map-div {
+        padding-bottom: 40%;
+    }
+}
+
+@media(max-width: 620px) {
+    .map-div {
+        padding-bottom: 100%;
+    }
+}

@@ -1,0 +1,370 @@
+﻿body {
+    margin: 0;
+    font-family: "Roboto Regular";
+}
+
+.blue {
+    background-color: #209fce;
+    color: #FFF;
+}
+input {
+    border-color: #FFF;
+    border-radius: 2px;
+}
+
+.menu {
+    width: 100%;
+    height: 75px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-bottom: 1px solid #2f95c8;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+    .menu .logoMenu, .menu .logoMenu a {
+        display: flex;
+        width: 100%;
+    }
+
+        .menu .logoMenu img {
+            display: block;
+            margin: auto;
+            transition: .3s ease;
+        }
+
+            .menu .logoMenu img:hover {
+                transform: scale(1.055);
+            }
+
+    .menu .contentMenu {
+        display: flex;
+    }
+
+#navMenu {
+    width: auto;
+    margin: auto;
+    display: flex;
+}
+
+.itemMenu {
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    padding-bottom: 1px;
+}
+
+    .itemMenu a {
+        text-decoration: none;
+        color: #000;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+        .itemMenu a:hover {
+            color: #008ed5;
+        }
+
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    width: 100%;
+}
+
+    section .titulo {
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+    }
+
+        section .titulo h1 {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: "Raleway Regular";
+        }
+
+.contentSobre {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+    .contentSobre .descricaoEmpresa {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        padding: 25px 0;
+    }
+
+        .contentSobre .descricaoEmpresa p {
+            text-align: center;
+        }
+
+    .contentSobre .conteudoEmpresa {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+        .contentSobre .conteudoEmpresa .qualidades {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .contentSobre .conteudoEmpresa .qualidades h5 {
+                margin: 15px 0 5px 0;
+            }
+
+            .contentSobre .conteudoEmpresa .qualidades label {
+                margin-bottom: 10px 0;
+            }
+
+    .contentSobre .imgEmpresa {
+        display: flex;
+    }
+
+        .contentSobre .imgEmpresa img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+        }
+
+.conteudoServicos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .conteudoServicos .itemServico {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        min-height: 300px;
+    }
+
+        .conteudoServicos .itemServico img {
+            display: block;
+            margin: auto;
+            max-width: 100%;
+        }
+
+        .conteudoServicos .itemServico h5 {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .conteudoServicos .itemServico p {
+            text-align: justify;
+            width: 100%;
+            font-size: 14px;
+        }
+
+.areaAvaliacoes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .areaAvaliacoes .descricaoAvaliacoes {
+        text-align: center;
+        margin: auto;
+    }
+
+    .areaAvaliacoes .itemAvaliacao {
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+        .areaAvaliacoes .itemAvaliacao .imgAvaliacao {
+            display: flex;
+        }
+
+            .areaAvaliacoes .itemAvaliacao .imgAvaliacao img {
+                display: block;
+                margin: auto;
+                max-width: 100%;
+            }
+
+        .areaAvaliacoes .itemAvaliacao .comentarioAvaliacao {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+            .areaAvaliacoes .itemAvaliacao .comentarioAvaliacao p {
+                width: 100%;
+                text-align: left;
+                font-size: 16px;
+                font-style: italic;
+                margin: auto;
+            }
+
+.orcamento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+    .orcamento .descricaoOrcamento {
+        display: flex;
+    }
+
+        .orcamento .descricaoOrcamento p {
+            margin: auto;
+            text-align: center;
+            line-height: 30px;
+            font-size: 16px;
+        }
+
+    .orcamento .formulario {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+        .orcamento .formulario .form-row {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: auto;
+            padding: 5px 0;
+        }
+
+        .orcamento .formulario .form-row-metade {
+            display: flex;
+            width: 60%;
+            margin: auto;
+            flex-direction: row;
+        }
+
+            .orcamento .formulario .form-row-metade .itemFormLeft {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                margin: auto auto auto 0;
+            }
+
+            .orcamento .formulario .form-row-metade .itemFormRight {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
+                margin: auto 0 auto auto;
+            }
+
+        .orcamento .formulario .servicosDesejados {
+            display: flex;
+            width: 60%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+            .orcamento .formulario .servicosDesejados p {
+                width: 100%;
+            }
+
+            .orcamento .formulario .servicosDesejados .itemServicoDesejado {
+                padding: 5px 10px;
+            }
+
+
+        .orcamento .formulario .opcoesCbbx {
+            width: 60%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+            .orcamento .formulario .opcoesCbbx .cbbxTipoResidencia,
+            .orcamento .formulario .opcoesCbbx .cbbxHorarioVisita {
+                width: 45%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+            }
+/*
+.contato .descricaoContato {
+    width: 100%;
+    padding: 15px 0;
+}
+
+    .contato .descricaoContato p {
+        width: 100%;
+        text-align: center;
+    }*/
+
+#contato {
+    padding-bottom: 50px;
+}
+
+.contato .localizacao {
+    padding-top: 50px;
+    display: flex;
+}
+
+    .contato .localizacao .informacoes .wpp-icon {
+        color: #1E2225;
+        margin-left: 5px;
+    }
+
+    .contato .localizacao .informacoes .row h5 {
+        width: 100%;
+    }
+
+    .contato .localizacao .informacoes .row p {
+        font-size: 14px;
+    }
+
+    .contato .localizacao .informacoes .circulo {
+        color: #FFF;
+        border-radius: 50%;
+        width: 26px;
+        height: 25px;
+        text-align: center;
+        padding: 6px;
+        background-color: #EE534F;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+
+    .contato .localizacao .maps {
+        height: 100%;
+    }
+
+
+footer {
+    width: 100%;
+    background-color: #232323;
+    display: flex;
+    margin: 0;
+    padding: 10px 0;
+}
+
+    footer span {
+        height: 15px;
+        color: #FFF;
+        text-align: center;
+        margin: auto;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
