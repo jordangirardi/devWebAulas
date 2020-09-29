@@ -1,0 +1,16 @@
+﻿
+Melhorias:
+
+	♦ Index:
+		layout;
+
+	♦ House Paint:
+		navbar Bootstrap;
+		responsividade;
+
+	♦ Lascas Admin:
+		money mask;
+		dateTime mask;
+		clean code;
+
+

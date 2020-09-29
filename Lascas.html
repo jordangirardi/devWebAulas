@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="img/Aula02/Games.ico" />
+
+    <!-- bootstrap css -->
+    <link href="css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/Lascas/lascas.css" rel="stylesheet" />
+    <link href="css/Lascas/responsive.css" rel="stylesheet" />
+    <link href="css/fonts.css" rel="stylesheet" />
+
+    <title>LASCAS ADMIN</title>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Lascas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalCategoria">Categorias</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalEditar">Novo lançamento</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+
+
+        <div class="jumbotron">
+            <h1 class="display-4">Lascas Admin</h1>
+            <p class="lead">Bem vindo a área administrativa de Lascas.</p>
+            <hr class="my-4">
+            <p>Registre toda a sua movimentação de Lascas abaixo.</p>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Classe</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Data e hora</th>
+                    <th scope="col">Descrição</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col"></th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">+</th>
+                    <td>Aplicação</td>
+                    <td>25-10-2020 08:00</td>
+                    <td>Comida</td>
+                    <td>L$ 5000,00</td>
+                    <td class="areaBotoes">
+                        <button type="button" class="btn btn-primary btnEditar" data-toggle="modal" data-target="#modalEditar">Editar</button>
+                        <button type="button" class="btn btn-primary btnExcluir" data-toggle="modal" data-target="#modalExcluir">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">-</th>
+                    <td>Gasolina</td>
+                    <td>25-10-2020 08:00</td>
+                    <td>Gasolina</td>
+                    <td>L$ 5000,00</td>
+                    <td class="areaBotoes">
+                        <button type="button" class="btn btn-primary btnEditar" data-toggle="modal" data-target="#modalEditar">Editar</button>
+                        <button type="button" class="btn btn-primary btnExcluir" data-toggle="modal" data-target="#modalExcluir">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">-</th>
+                    <td>Açougue</td>
+                    <td>25-10-2020 08:00</td>
+                    <td>Açougue</td>
+                    <td>L$ 5000,00</td>
+                    <td class="areaBotoes">
+                        <button type="button" class="btn btn-primary btnEditar" data-toggle="modal" data-target="#modalEditar">Editar</button>
+                        <button type="button" class="btn btn-primary btnExcluir" data-toggle="modal" data-target="#modalExcluir">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+    <div class="modal fade" id="modalEditar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Adicionar / Editar registro</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row itemEdicaoRegistro">
+                        <label>Categoria</label>
+                        <select>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                            <option>E</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row itemEdicaoRegistro">
+                        <label>Descrição</label>
+                        <input type="text" id="txtDescricao" />
+                    </div>
+
+                    <div class="form-row itemEdicaoRegistro">
+                        <label>Valor</label>
+                        <input type="number" id="txtDescricao" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalExcluir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Excluir Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <label>Deseja mesmo excluir este registro?</label>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCategoria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Gerenciar categorias</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-row">
+                        <input type="text" class="input" id="txtDescricao" />
+                        <button type="button" class="btn-primary">Adicionar</button>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <!--<button type="button" class="btn btn-primary">Excluir</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+<script src="js/Jquery/jquery.min.js"></script>
+<script src="js/Bootstrap/bootstrap.min.js"></script>
+

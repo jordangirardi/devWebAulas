@@ -1,0 +1,60 @@
+﻿.input {
+    margin: 2px 5px;
+}
+
+.areaBotoes {
+    display: flex;
+    align-content: center;
+}
+
+    .areaBotoes button {
+        margin: auto;
+        color: #FFF;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s ease;
+        border: none;
+        padding: 3px 10px;
+        font-size: 15px;
+        border-radius: 3px;
+    }
+
+
+
+    .areaBotoes .btnEditar {
+        background-color: #0094ff;
+    }
+
+        .areaBotoes .btnEditar:hover {
+            background-color: #006dbb;
+        }
+
+    .areaBotoes .btnExcluir {
+        background-color: #ff0000;
+    }
+
+        .areaBotoes .btnExcluir:hover {
+            background-color: #a80000;
+        }
+
+.table tr {
+    text-align: center;
+}
+
+.modal .itemEdicaoRegistro {
+    flex-direction: column;
+    padding: 10px 25px;
+}
+
+    .modal .itemEdicaoRegistro label {
+        margin: 0;
+    }
+
+.modal select,
+.modal input {
+    min-height: 30px;
+}
+
+.modal select {
+    cursor: pointer;
+}
